@@ -11,24 +11,36 @@
             <h1>Drums</h1>
             <div class="drum_container">
                 <div id="line1">
-                    <button class="drum" id="q">Q</button>
-                    <button class="drum" id="w">W</button>
-                    <button class="drum" id="e">E</button>
+                    <button class="drum" onclick="playSound('keyq')" id="keyq">Q</button>
+                    <button class="drum" onclick="playSound('keyw')" id="keyw">W</button>
+                    <button class="drum" onclick="playSound('keye')" id="keye">E</button>
                 </div>
                 <div id="line2">
-                    <button class="drum" id="a">A</button>
-                    <button class="drum" id="s">S</button>
-                    <button class="drum" id="d">D</button>
+                    <button class="drum" onclick="playSound('keya')" id="keya">A</button>
+                    <button class="drum" onclick="playSound('keys')" id="keys">S</button>
+                    <button class="drum" onclick="playSound('keyd')" id="keyd">D</button>
                 </div>
                 <div id="line3">
-                    <button class="drum" id="z">Z</button>
-                    <button class="drum" id="x">X</button>
-                    <button class="drum" id="c">C</button>
+                    <button class="drum" onclick="playSound('keyz')" id="keyz">Z</button>
+                    <button class="drum" onclick="playSound('keyx')" id="keyx">X</button>
+                    <button class="drum" onclick="playSound('keyc')" id="keyc">C</button>
                 </div>
             </div>
-            <input type="text" placeholder="Faça uma composição..."/>
+            <input id="input" type="text" placeholder="Faça uma composição..."/>
             <button id="tocar">Tocar</button>
             <div id="gab">Made by gabrielpr208</div>
         </div>
+
+        <audio id="s_keyq" src="../sounds/keyq.wav"></audio>
+        <audio id="s_keyw" src="../sounds/keyw.wav"></audio>
+        <audio id="s_keye" src="../sounds/keye.wav"></audio>
+        <audio id="s_keya" src="../sounds/keya.wav"></audio>
+        <audio id="s_keys" src="../sounds/keys.wav"></audio>
+        <audio id="s_keyd" src="../sounds/keyd.wav"></audio>
+        <audio id="s_keyz" src="../sounds/keyz.wav"></audio>
+        <audio id="s_keyx" src="../sounds/keyx.wav"></audio>
+        <audio id="s_keyc" src="../sounds/keyc.wav"></audio>
+
         <script src="script.js"></script>
+    </body>
 </html>

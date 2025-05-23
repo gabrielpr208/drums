@@ -67,3 +67,8 @@ button:hover{
     color: yellow;
     border-color: yellow;
 }
+
+.drum.active{
+    color: yellow;
+    border-color: yellow;
+}
